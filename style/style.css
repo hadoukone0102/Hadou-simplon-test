@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+
+:root {
+    --black: #2c2c54;
+    --orange: #f6ab20;
+}
+
+*::selection {
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    overflow-x: hidden;
+}
+
+.test {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--orange);
+}
