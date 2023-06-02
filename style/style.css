@@ -26,17 +26,24 @@ html {
     overflow-x: hidden;
 }
 
+.main {
+    display: block;
+}
+
 .test {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    height: 10vh;
 }
 
 Header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 2rem 12%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 1px 3px rgba(0, 0, 0, .10);
 }
 
@@ -78,4 +85,262 @@ header .header-2 .navBar a:hover {
     background-color: var(--orange);
     border-radius: .5rem;
     color: white
+}
+
+.main .desing {
+    background-color: var(--black);
+    height: 70rem;
+}
+
+/* les points communs  */
+section {
+    padding: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.title span {
+    color: var(--orange)
+}
+
+
+/* les points communs  */
+.Service {
+    display: block;
+}
+
+#ma-grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Trois colonnes de taille égale */
+    grid-template-rows: repeat(1, 200px);
+    /* Deux rangées de 200px de hauteur */
+    gap: 20px;
+    /* Ajouter un espace de 20px entre chaque cellule */
+    padding: 2rem;
+}
+
+#ma-grille .cellule {
+    position: relative;
+    display: block;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
+}
+
+#ma-grille .cellule .serv {
+    text-align: center;
+    margin-bottom: 1rem;
+    border-bottom: 1rem solid rgba(0, 0, 0, .3);
+}
+
+#ma-grille .cellule .serv h3 {
+    font-size: 2rem;
+}
+
+#ma-grille .cellule .commentaire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+#ma-grille .cellule .btn {
+    background-color: var(--black);
+    color: white;
+    padding: 2rem 9%;
+    margin: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#ma-grille .cellule .btn:hover {
+    background-color: var(--orange);
+    border-radius: .5rem;
+}
+
+/*  contact */
+
+
+.boite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+}
+
+.content_contact {
+    display: block;
+}
+
+.content_contact h3 {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.content_contact form {
+    display: block;
+}
+
+.content_contact form .input-form {
+    display: flex;
+    padding: 1rem;
+}
+
+.content_contact form .input-form .inp-content,
+.inp-content label {
+    display: block;
+    padding: 1rem;
+}
+
+.content_contact form .input-form label {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.content_contact form .input-form input {
+    height: 5rem;
+}
+
+/*  contact */
+
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
+}
+
+footer .Header a {
+    display: block;
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer .Header img {
+    height: 10rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+footer .lien {
+    display: block;
+}
+
+footer .lien h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer .lien .navBar a {
+    display: block;
+    padding: 1.5rem;
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+footer .lien .navBar a:hover {
+    background-color: var(--black);
+    color: white;
+}
+
+footer .footer_comm {
+    display: block;
+}
+
+footer .footer_comm h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+footer .footer_comm .form-footer {
+    border: 1rem solid rgba(0, 0, 0, .2);
+    padding: 1.5rem;
+}
+
+footer .footer_comm .form-footer label {
+    display: block;
+    padding: 1rem;
+    color: var(--black);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer .footer_comm .form-footer input {
+    border: .1rem solid rgba(0, 0, 0, .2);
+    margin-bottom: 1rem;
+    height: 5rem;
+    padding: .5rem;
+}
+
+footer .footer_comm .form-footer .btn {
+    display: block;
+    padding: 2rem 9%;
+    background-color: var(--black);
+    color: white;
+
+}
+
+footer .footer_comm .form-footer .btn:focus {
+    background-color: var(--orange);
+    border-radius: .5rem;
+}
+
+/* footer */
+
+
+/* responsive */
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:900px) {
+    section {
+        padding: 1.5rem;
+    }
+}
+
+@media(max-width:768px) {}
+
+@media(max-width:500px) {
+    html {
+        font-size: 50%;
+    }
+
+    #ma-grille {
+        display: block;
+    }
+
+    footer {
+        display: block;
+    }
+
 }

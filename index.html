@@ -10,19 +10,110 @@
 </head>
 
 <body>
-    <header>
+    <div class="main">
+        <header>
+            <div class="Header">
+                <img src="img/kone.png" alt="">
+                <a href="#">Hadou Services</a>
+            </div>
+            <div class="header-2">
+                <nav class="navBar">
+                    <a id="acceuil" href="#">Accuiel</a>
+                    <a href="#" id="service">Services</a>
+                    <a href="#">Contacts</a>
+                </nav>
+            </div>
+        </header>
+        <div class="desing" id="acceuil">
+            <p class="test"> en Cour de Dévéloppement</p>
+        </div>
+    </div>
+    <section class="Service" id="service">
+        <h1 class="title">Les Services de chez <span>Hadou services</span></h1>
+        <div class="content">
+            <div id="ma-grille">
+                <div class="cellule">
+                    <div class="serv">
+                        <h3>Dévéloppement Web</h3>
+                    </div>
+                    <div class="commentaire">
+                        <p>Les meilleur Service</p>
+                    </div>
+                    <a href="#" class="btn">Nous Contacter</a>
+                </div>
+                <div class="cellule">
+                    <div class="serv">
+                        <h3>Dévéloppement Mobile</h3>
+                    </div>
+                    <div class="commentaire">
+                        <p>Les meilleur Service</p>
+                    </div>
+                    <a href="#" class="btn">Nous Contacter</a>
+                </div>
+                <div class="cellule">
+                    <div class="serv">
+                        <h3>Confection d'Affiche</h3>
+                    </div>
+                    <div class="commentaire">
+                        <p>Les meilleur Service</p>
+                    </div>
+                    <a href="#" class="btn">Nous Contacter</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1 class="title">Les Contacts de chez <span>Hadou services</span></h1>
+        <div class="boite">
+            <div class="content_contact">
+                <h3>Formulaire de Contacts</h3>
+                <form action="">
+                    <div class="input-form">
+                        <div class="inp-content">
+                            <label for="Name">Votre Nom</label>
+                            <input type="text" autocomplete="off">
+                        </div>
+                        <div class="inp-content">
+                            <label for="Name">Votre Prenom</label>
+                            <input type="text" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="input-form">
+                        <div class="inp-content">
+                            <label for="Name">Votre Message</label>
+                            <textarea name="" id="area" cols="40" rows="15"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-form">
+                        <input type="submit" value="Enregistrer" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
         <div class="Header">
             <img src="img/kone.png" alt="">
             <a href="#">Hadou Services</a>
         </div>
-        <div class="header-2">
+        <div class="lien">
+            <h3>Lien vers le Haut</h3>
             <nav class="navBar">
-                <a href="#">Accuiel</a>
-                <a href="#">Services</a>
+                <a id="acceuil" href="#">Accuiel</a>
+                <a href="#" id="service">Services</a>
                 <a href="#">Contacts</a>
             </nav>
         </div>
-    </header>
+        <div class="footer_comm">
+            <h3>Lien vers le Haut</h3>
+            <form action="#" class="form-footer">
+                <label for="Email">Vortre Email</label>
+                <input type="Eemail" placeholder="" autocomplete="off">
+                <a href="#" class="btn">Envoyer</a>
+            </form>
+        </div>
+    </footer>
 </body>
 
 </html>
