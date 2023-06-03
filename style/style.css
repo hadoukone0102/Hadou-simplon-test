@@ -88,11 +88,62 @@ header .header-2 .navBar a:hover {
 }
 
 .main .desing {
+    position: relative;
     background-color: var(--black);
-    height: 70rem;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 12%;
+}
+
+.main .desing .critere {
+    display: block;
+}
+
+.main .desing .critere .titre-crit {
+    position: absolute;
+    top: 2rem;
+    display: block;
+    padding: 1.5rem;
+}
+
+.main .desing .critere .titre-crit h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.main .desing .critere .text-crit p {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+.main .desing .critere .button {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    padding: 2rem;
+}
+
+.main .desing .critere .button .btn {
+    background-color: var(--orange);
+    margin: 2rem;
+    padding: 2rem;
+    display: block;
+
 }
 
 /* les points communs  */
+.btn {
+    padding: 2rem 9%;
+    background-color: var(--black);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 section {
     padding: 2rem;
 }
@@ -175,17 +226,33 @@ section {
 .boite {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-color: var(--orange);
+    padding: 2rem 10%;
+}
+
+.boite .decoration {
+    display: block
+}
+
+.boite .decoration .image_deco {
+    width: 50rem;
+    height: auto;
+}
+
+.boite .decoration .image_deco img {
+    width: 100%;
+    height: 100%;
 }
 
 .content_contact {
     display: block;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.23);
 }
 
 .content_contact h3 {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     color: white;
     font-weight: bolder;
     font-size: 2rem;
@@ -197,7 +264,7 @@ section {
 
 .content_contact form .input-form {
     display: flex;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .content_contact form .input-form .inp-content,
@@ -207,13 +274,28 @@ section {
 }
 
 .content_contact form .input-form label {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     color: var(--black);
 }
 
 .content_contact form .input-form input {
     height: 5rem;
+    max-width: 30rem;
+    padding: 2rem;
+}
+
+#area {
+    height: 140px;
+    resize: none;
+    width: 600px;
+    padding: 2rem;
+}
+
+.content_contact form .input-form .btn:hover {
+    background-color: white;
+    border-radius: .5rem;
+    color: var(--black);
 }
 
 /*  contact */
@@ -280,7 +362,7 @@ footer .footer_comm h3 {
 }
 
 footer .footer_comm .form-footer {
-    border: 1rem solid rgba(0, 0, 0, .2);
+    border: .1rem solid rgba(0, 0, 0, .2);
     padding: 1.5rem;
 }
 
@@ -304,7 +386,12 @@ footer .footer_comm .form-footer .btn {
     padding: 2rem 9%;
     background-color: var(--black);
     color: white;
+    text-align: center;
+}
 
+footer .footer_comm .form-footer .btn:hover {
+    background-color: var(--orange);
+    border-radius: .5rem;
 }
 
 footer .footer_comm .form-footer .btn:focus {
@@ -326,9 +413,28 @@ footer .footer_comm .form-footer .btn:focus {
     section {
         padding: 1.5rem;
     }
+
+    .boite {
+        display: block;
+        padding: 2rem;
+    }
 }
 
-@media(max-width:768px) {}
+@media(max-width:768px) {
+    #area {
+        width: 550px;
+    }
+}
+
+@media(max-width:600px) {
+    #area {
+        width: 400px;
+    }
+
+    .main .desing {
+        display: block;
+    }
+}
 
 @media(max-width:500px) {
     html {
@@ -340,6 +446,28 @@ footer .footer_comm .form-footer .btn:focus {
     }
 
     footer {
+        display: block;
+    }
+
+    #area {
+        width: auto;
+    }
+
+    .main .desing {
+        display: block;
+    }
+
+    .main .desing .critere .titre-crit {
+        position: relative;
+
+    }
+
+    .main .desing .critere .button {
+        position: relative;
+
+    }
+
+    .content_contact form .input-form {
         display: block;
     }
 
