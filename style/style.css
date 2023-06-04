@@ -84,7 +84,51 @@ header .header-2 .navBar a {
 header .header-2 .navBar a:hover {
     background-color: var(--orange);
     border-radius: .5rem;
-    color: white
+    color: white;
+
+}
+
+#menu {
+    padding: 2rem 5%;
+    font-size: 3rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    color: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+.search {
+    display: flex;
+    height: 5rem;
+}
+
+.search .search-inp {
+    display: flex;
+    border: .1rem rgba(0, 0, 0, .1);
+    height: 5rem;
+}
+
+.search .search-inp input {
+    height: 5rem;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.search .search-inp label {
+    height: 5rem;
+    text-align: center;
+    line-height: 5;
+    background-color: var(--orange);
+    width: 5rem;
+    color: white;
+    cursor: pointer;
 }
 
 .main .desing {
@@ -224,30 +268,25 @@ section {
 
 
 .boite {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--orange);
+    display: block;
+    background-image: url(../img/simplon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 2rem 10%;
 }
 
-.boite .decoration {
-    display: block
-}
-
-.boite .decoration .image_deco {
-    width: 50rem;
-    height: auto;
-}
-
-.boite .decoration .image_deco img {
-    width: 100%;
-    height: 100%;
+.boite h3 {
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem;
 }
 
 .content_contact {
     display: block;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
 }
 
 .content_contact h3 {
@@ -288,7 +327,7 @@ section {
 #area {
     height: 140px;
     resize: none;
-    width: 600px;
+    max-width: 80rem;
     padding: 2rem;
 }
 
@@ -407,9 +446,30 @@ footer .footer_comm .form-footer .btn:focus {
     html {
         font-size: 55%;
     }
+
+    .boite {
+
+        padding: 2rem;
+    }
+}
+
+@media(max-width:980px) {
+    .boite {
+        padding: 1.5rem;
+    }
+
+    .boite .decoration .image_deco {
+        width: 40rem;
+        height: auto;
+    }
 }
 
 @media(max-width:900px) {
+    .search {
+        display: none;
+
+    }
+
     section {
         padding: 1.5rem;
     }
@@ -418,21 +478,35 @@ footer .footer_comm .form-footer .btn:focus {
         display: block;
         padding: 2rem;
     }
+
 }
 
 @media(max-width:768px) {
-    #area {
-        width: 550px;
+
+    #menu {
+        display: block;
+    }
+
+    header .header-2 .navBar {
+        display: none;
+        padding: 2rem;
+    }
+
+    header .header-2 .navBar a {
+        padding: 2rem 9%;
+        font-size: 2rem;
+        color: var(--black);
+        border: .1rem solid rgba(0, 0, 0, .3);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
+        margin-left: 1rem;
     }
 }
 
 @media(max-width:600px) {
-    #area {
-        width: 400px;
-    }
 
-    .main .desing {
-        display: block;
+
+    #area {
+        width: 100%;
     }
 }
 
@@ -447,10 +521,6 @@ footer .footer_comm .form-footer .btn:focus {
 
     footer {
         display: block;
-    }
-
-    #area {
-        width: auto;
     }
 
     .main .desing {
