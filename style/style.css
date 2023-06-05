@@ -134,11 +134,11 @@ header .header-2 .navBar a:hover {
 .main .desing {
     position: relative;
     background-color: var(--black);
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 12%;
+    padding: 2rem 9%;
 }
 
 .main .desing .critere {
@@ -175,8 +175,24 @@ header .header-2 .navBar a:hover {
     margin: 2rem;
     padding: 2rem;
     display: block;
-
 }
+
+.images-derou {
+    display: block;
+}
+
+.images-derou .image {
+    display: block;
+    max-height: 60rem;
+    max-width: 40rem;
+}
+
+.images-derou .image img {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /* les points communs  */
 .btn {
