@@ -40,6 +40,7 @@ html {
 }
 
 Header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,78 +104,59 @@ header .header-2 .navBar a:hover {
     color: white;
 }
 
-.search {
-    display: flex;
-    height: 5rem;
-}
-
-.search .search-inp {
-    display: flex;
-    border: .1rem rgba(0, 0, 0, .1);
-    height: 5rem;
-}
-
-.search .search-inp input {
-    height: 5rem;
-    padding: 1rem;
-    display: block;
-    width: 100%;
-}
-
-.search .search-inp label {
-    height: 5rem;
-    text-align: center;
-    line-height: 5;
-    background-color: var(--orange);
-    width: 5rem;
-    color: white;
-    cursor: pointer;
-}
-
 .main .desing {
-    position: relative;
     background-color: var(--black);
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 2rem 5%;
 }
 
 .main .desing .critere {
+    position: relative;
     display: block;
+    padding: 2rem;
 }
 
 .main .desing .critere .titre-crit {
-    position: absolute;
-    top: 2rem;
+    position: relative;
     display: block;
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .main .desing .critere .titre-crit h1 {
     font-size: 3rem;
     color: white;
+    margin-bottom: 1rem;
 }
 
 .main .desing .critere .text-crit p {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
     text-align: center;
     padding: 2rem;
     color: white;
+    font-size: 2rem;
 }
 
-.main .desing .critere .button {
-    position: absolute;
-    bottom: 2rem;
+.main .desing .critere .text-crit .button {
     display: flex;
     padding: 2rem;
 }
 
-.main .desing .critere .button .btn {
+.main .desing .critere .text-crit .button .btn {
     background-color: var(--orange);
     margin: 2rem;
     padding: 2rem;
-    display: block;
+    width: 15rem;
+    text-align: center;
+}
+
+.main .desing .critere .text-crit .button .btn:hover {
+    background-color: white;
+    color: var(--black);
+    border-radius: .5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .12);
 }
 
 .images-derou {
@@ -454,6 +436,35 @@ footer .footer_comm .form-footer .btn:focus {
     border-radius: .5rem;
 }
 
+.search {
+    display: flex;
+    height: 5rem;
+}
+
+.search .search-inp {
+    display: flex;
+    border: .1rem rgba(0, 0, 0, .1);
+    height: 5rem;
+}
+
+.search .search-inp input {
+    height: 5rem;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    border: .1rem rgba(0, 0, 0, .1);
+}
+
+.search .search-inp label {
+    height: 5rem;
+    text-align: center;
+    line-height: 5;
+    background-color: var(--orange);
+    width: 5rem;
+    color: white;
+    cursor: pointer;
+}
+
 /* footer */
 
 
@@ -466,6 +477,10 @@ footer .footer_comm .form-footer .btn:focus {
     .boite {
 
         padding: 2rem;
+    }
+
+    .search {
+        display: none;
     }
 }
 
@@ -481,10 +496,7 @@ footer .footer_comm .form-footer .btn:focus {
 }
 
 @media(max-width:900px) {
-    .search {
-        display: none;
 
-    }
 
     section {
         padding: 1.5rem;
@@ -504,23 +516,41 @@ footer .footer_comm .form-footer .btn:focus {
     }
 
     header .header-2 .navBar {
+        background-color: var(--orange);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        height: 30rem;
+        z-index: 100;
         display: none;
         padding: 2rem;
     }
 
     header .header-2 .navBar a {
+        display: block;
         padding: 2rem 9%;
         font-size: 2rem;
         color: var(--black);
         border: .1rem solid rgba(0, 0, 0, .3);
         box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
         margin-left: 1rem;
+        width: 100%;
+        margin-bottom: .5rem;
+        background-color: white;
+        text-align: center;
+    }
+
+    header .header-2 .navBar.active {
+        display: initial;
+    }
+
+    .main .desing {
+        display: block;
     }
 }
 
 @media(max-width:600px) {
-
-
     #area {
         width: 100%;
     }
