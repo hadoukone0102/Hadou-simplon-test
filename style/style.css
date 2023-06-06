@@ -213,7 +213,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Trois colonnes de taille égale */
-    grid-template-rows: repeat(1, 200px);
+    grid-template-rows: repeat(1, 300px);
     /* Deux rangées de 200px de hauteur */
     gap: 20px;
     /* Ajouter un espace de 20px entre chaque cellule */
@@ -244,6 +244,11 @@ section {
     justify-content: center;
     padding: 1rem;
     margin-bottom: 2rem;
+}
+
+#ma-grille .cellule .commentaire p {
+    font-size: 1.5rem;
+    color: var(--black);
 }
 
 #ma-grille .cellule .btn {

@@ -73,4 +73,20 @@
         menuderou.classList.remove('active');
         menubar.classList.remove('fa-times')
     })
+    const contacts = document.querySelector("#contacts_h");
+    const service = document.querySelector("#service_h");
+    const sectionContact = document.querySelector("#section-contact");
+    const sectionService = document.querySelector("#section-service");
+    contacts.addEventListener('click', () => {
+        window.scrollTo({
+            top: sectionContact.offsetTop,
+            behavior: 'smooth'
+        });
+    })
+    service.addEventListener('click', () => {
+        window.scrollTo({
+            top: sectionService.offsetTop,
+            behavior: 'smooth'
+        });
+    })
 })();
