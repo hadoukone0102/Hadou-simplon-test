@@ -213,7 +213,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Trois colonnes de taille égale */
-    grid-template-rows: repeat(1, 300px);
+    grid-template-rows: repeat(1, auto);
     /* Deux rangées de 200px de hauteur */
     gap: 20px;
     /* Ajouter un espace de 20px entre chaque cellule */
@@ -484,9 +484,7 @@ footer .footer_comm .form-footer .btn:focus {
         padding: 2rem;
     }
 
-    .search {
-        display: none;
-    }
+
 }
 
 @media(max-width:980px) {
