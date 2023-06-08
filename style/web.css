@@ -1,0 +1,130 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.7rem;
+    overflow-x: hidden;
+}
+
+.header_main header {
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_main header .header-2 .navBar a:hover {
+    color: #2c2c54;
+}
+
+.header_main {
+    display: block;
+}
+
+.header_main .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header_main .head .img_head {
+    width: 40rem;
+    height: auto;
+}
+
+.header_main .head .img_head img {
+    width: 100%;
+    height: 100%;
+}
+
+.header_main .head .structure {
+    display: block;
+    padding: 1rem;
+}
+
+.header_main .head .structure h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header_main .head .structure .processus {
+    display: flex;
+    width: 100%;
+}
+
+.header_main .head .structure .processus .elmnt_nav {
+    padding: 2rem;
+    display: block;
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.header_main .head .structure .processus .elmnt_nav .links.active {
+    background-color: #f0a10e;
+    color: white;
+}
+
+.header_main .head .structure .processus .elmnt_nav a {
+    display: block;
+    padding: 1.5rem;
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    margin: .5rem;
+    color: #2c2c54;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header_main .head .structure .processus .element_content {
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 100%;
+}
+
+.header_main .head .structure .processus .element_content .contenue {
+    display: none;
+}
+
+.header_main .head .structure .processus .element_content .contenue.active {
+    display: initial;
+    font-size: 1.5rem;
+    color: #2c2c54;
+}
+
+/* responsive */
+
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:900px) {
+    .header_main .head {
+        display: block;
+    }
+
+    .header_main .head .img_head {
+        width: auto;
+    }
+
+    .header_main .head .img_head #img2 {
+        width: 50%;
+        height: 60%;
+    }
+}
+
+@media(max-width:768px) {
+    .header_main .head .structure {
+        width: auto;
+    }
+
+    .header_main .head .structure .processus {
+        display: block;
+    }
+
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}

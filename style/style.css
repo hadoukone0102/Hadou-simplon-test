@@ -568,6 +568,10 @@ footer .footer_comm .form-footer .btn:focus {
         display: block;
     }
 
+    #ma-grille .cellule {
+        margin-bottom: 1rem;
+    }
+
     footer {
         display: block;
     }
