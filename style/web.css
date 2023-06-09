@@ -26,7 +26,7 @@ html {
 }
 
 .header_main .head .img_head {
-    width: 40rem;
+    width: 100%;
     height: auto;
 }
 
@@ -87,6 +87,54 @@ html {
     display: initial;
     font-size: 1.5rem;
     color: #2c2c54;
+}
+
+/*  autre */
+
+.cellule_gril {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 2rem;
+}
+
+.cellule_gril .box_cellule {
+    display: block;
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 1rem;
+}
+
+.cellule_gril .box_cellule .ttle {
+    display: block;
+    padding: 1rem;
+}
+
+.cellule_gril .box_cellule .ttle h3 {
+    font-size: 2rem;
+    color: #2c2c54;
+    border-bottom: 1rem solid rgba(0, 0, 0, .3);
+}
+
+.cellule_gril .box_cellule .motivation {
+    padding: 1rem;
+}
+
+.cellule_gril .box_cellule .motivation p {
+    color: black;
+    padding: 1rem;
+}
+
+.cellule_gril .box_cellule .btn {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cellule_gril .box_cellule .btn:hover {
+    background-color: #f0a10e;
+    color: white;
 }
 
 /* responsive */
