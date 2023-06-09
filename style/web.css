@@ -169,6 +169,13 @@ html {
         display: block;
     }
 
+    .cellule_gril {
+        display: block;
+    }
+
+    .cellule_gril .box_cellule {
+        margin-bottom: 1rem;
+    }
 }
 
 @media(max-width:450px) {
