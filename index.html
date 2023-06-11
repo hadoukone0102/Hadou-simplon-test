@@ -114,61 +114,38 @@
 
         </div>
     </section>
-    <section class="contact" id="section-contact">
+    <!-- Section contact start-->
+    <section class="contact" id="contact">
+
         <h1 class="title">Les Contacts de chez <span>Hadou services</span></h1>
-        <div class="boite">
-            <h3>Formulaire de Contacts</h3>
-            <div class="content_contact">
-                <h3>Formulaire de Contacts</h3>
-                <form action="">
-                    <div class="input-form">
-                        <div class="inp-content">
-                            <label for="Name">Votre Nom</label>
-                            <input type="text" autocomplete="off">
-                        </div>
-                        <div class="inp-content">
-                            <label for="Name">Votre Prenom</label>
-                            <input type="text" autocomplete="off">
-                        </div>
-                        <div class="inp-content">
-                            <label for="Name">Votre Contacts</label>
-                            <input type="number" autocomplete="off">
-                        </div>
-                        <div class="inp-content">
-                            <label for="Name">email</label>
-                            <input type="email" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="input-form">
-                        <div class="inp-content">
-                            <label for="Name">Votre Message</label>
-                            <textarea name="" id="area" resize="none" cols="20" rows="10"></textarea>
-                        </div>
-                        <div class="inp-content">
-                            <label for="Name">Votre Sexe</label>
-                            <input type="text" autocomplete="off">
-                        </div>
-                        <div class="inp-content">
-                            <label for="Name">Votre Prenom</label>
-                            <input type="text" autocomplete="off">
-                        </div>
-                        <div class="inp-content">
-                            <label for="Name">Votre Prenom</label>
-                            <input type="text" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="input-form">
-                        <input type="submit" value="Enregistrer" class="btn">
-                    </div>
-                </form>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
             </div>
 
-        </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <a href="#" class="btn">send message</a>
+
+        </form>
+
     </section>
+    <!-- Section contact end-->
+    <!--section footer start-->
     <footer>
-        <div class="Header">
-            <img src="img/kone.png" alt="">
-            <a href="#">Hadou Services</a>
+        <div class="logo">
+            <h3>Notre Emblème</h3>
+            <div class="Header">
+                <img src="img/kone.png" alt="">
+                <a href="#">Hadou Services</a>
+            </div>
         </div>
         <div class="lien">
             <h3>Lien vers le Haut</h3>
@@ -179,6 +156,7 @@
             </nav>
         </div>
         <div class="search">
+            <h3>Que Chercher Vous ?</h3>
             <form action="#" class="search-inp">
                 <input type="search" placeholder="Search..." autocomplete="off">
                 <label for="search input" class="fa fa-search"></label>
@@ -193,26 +171,8 @@
             </form>
         </div>
     </footer>
+    <!--section footer end-->
     <script src="script/code.js"></script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyDgn01b5O88-0Ntq_DLkNMLT8UWpMTyjNA",
-            authDomain: "hkservices-6c861.firebaseapp.com",
-            projectId: "hkservices-6c861",
-            storageBucket: "hkservices-6c861.appspot.com",
-            messagingSenderId: "147502694815",
-            appId: "1:147502694815:web:0ede41c54286a213abbdaa"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-    </script>
 </body>
 
 </html>
