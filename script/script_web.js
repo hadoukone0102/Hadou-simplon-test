@@ -15,32 +15,31 @@
         })
     }
 
+    const contact = document.querySelector('#contacts_h');
+    const formulaire = document.querySelector('#formul');
+    const fleche = document.querySelector('#fleche');
+    contact.addEventListener('click', () => {
+        formulaire.classList.toggle('active')
+    })
+    fleche.addEventListener('click', () => {
+        formulaire.classList.remove('active');
+    })
+
+    window.addEventListener('scroll', () => {
+        formulaire.classList.remove('active');
+    })
+
+
+    const contient_tous = document.querySelector('.contient_tous');
+    const bt_hover = document.querySelectorAll('#bt_hover');
+    const croix_rouge = document.querySelector('#croix_rouge');
+    for (let i = 0; i < bt_hover.length; i++) {
+        bt_hover[i].addEventListener('click', () => {
+            contient_tous.classList.add('active')
+        })
+    }
+    croix_rouge.addEventListener('click', () => {
+        contient_tous.classList.remove('active')
+    })
+
 })();
-
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-
-    // Obtenez les valeurs des champs du formulaire
-    var form = this;
-    var name = form.name.value;
-    var email = form.email.value;
-    var message = form.message.value;
-
-    // Envoyer l'e-mail via EmailJS
-    var templateParams = {
-        from_name: name,
-        from_email: email,
-        message: message
-    };
-
-    emailjs.send('9G6jljGttPQu_tHCj', 'template_kawxqyo', templateParams)
-        .then(function (response) {
-            console.log('E-mail envoyé avec succès :', response.status);
-            // Réinitialiser le formulaire
-            form.reset();
-        }, function (error) {
-            console.error("Erreur lors de l'envoi de l'e-mail :", error);
-        });
-
-    console.log('ça passe super bien');
-});

@@ -6,15 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HKservices web</title>
+    <link rel="icon" type="image/png" href="../img/kone.png">
     <link rel="stylesheet" href="../style/web.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="../script/email.min.js" async></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("9G6jljGttPQu_tHCj")
-        })();
-    </script>
 </head>
 
 <body>
@@ -31,7 +26,7 @@
                     <a style="background-color: white;" href="#contact" id="contacts_h">Contacts</a>
                 </nav>
             </div>
-            <div id="menu" class="fa fa-bars" style="background-color: white;"></div>
+            <div id="menu" class="fa fa-bars menus"></div>
         </header>
         <div class="head">
             <div class="img_head">
@@ -131,107 +126,176 @@
             </div>
         </div>
     </div>
+    <section class="super" id="super">
+        <div class="contient_tous">
+            <!--Site web personnel-->
+            <form action="#" class="web_perso">
+                <div class="detail_web">
+                    <h3>Enregistrement des données</h3>
+                    <span id="croix_rouge">&plus;</span>
+                </div>
+                <div class="input_web">
+                    <input type="text" placeholder="Votre nom..">
+                    <input type="text" placeholder="Votre prenom..">
+                </div>
+                <div class="input_web">
+                    <input type="text" placeholder="Votre email">
+                    <input type="number" placeholder="Votre contact">
+                </div>
+                <div class="input_web">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Decrivez vous en quelques mots"></textarea>
+                </div>
+                <div class="input_web">
+                    <a href="#" class="btn">Commander</a>
+                </div>
+            </form>
+            <!--Site web personnel-->
+        </div>
+    </section>
 
     <section class="detail" id="detail">
         <h1 class="title">Plus de détails <span> Processus de developpement</span></h1>
         <div class="cellule_gril">
             <div class="box_cellule">
                 <div class="ttle">
-                    <h3>Recueil des exigences</h3>
+                    <h3>Un Site Web personnel</h3>
                 </div>
                 <div class="motivation">
-                    <p>Contactez Notre Entreprise De Développement Web</p>
+                    <p>
+                        Contactez Notre Entreprise De Développement Web
+                        pour avoir ta page personnel sur le net en un click.
+                    </p>
                 </div>
-                <a href="#" class="btn">Je me lance!</a>
+                <a href="#" class="btn" id="bt_hover">Commander</a>
             </div>
 
             <div class="box_cellule">
                 <div class="ttle">
-                    <h3>Conseil d'expert</h3>
+                    <h3>Un Site E-commerce</h3>
                 </div>
                 <div class="motivation">
-                    <p>n'hesite pas !!</p>
+                    <p>
+                        Il y a rien de plus mieux qu'un site e-commerce
+                        pour lancer son propre busnesse en ligne et se faire
+                        du pognom sans léver le pétit doit.
+                    </p>
                 </div>
-                <a href="#" class="btn">Je me lance!</a>
+                <a href="#" class="btn" id="bt_hover">Commander</a>
             </div>
 
             <div class="box_cellule">
                 <div class="ttle">
-                    <h3>Evaluation de projet</h3>
+                    <h3>Pour des Entreprises</h3>
                 </div>
                 <div class="motivation">
-                    <p>n'hesite pas !!</p>
+                    <p>
+                        Vous être Une entreprise et vous voulez numeriser votre
+                        vos affaires, HKservices est là pour vous aidez !
+                    </p>
                 </div>
-                <a href="#" class="btn">Je me lance!</a>
+                <a href="#" class="btn" id="bt_hover">Nous Contacté</a>
             </div>
 
             <div class="box_cellule">
                 <div class="ttle">
-                    <h3>conception UX</h3>
+                    <h3>Application Web interactive</h3>
                 </div>
                 <div class="motivation">
-                    <p>n'hesite pas !!</p>
+                    <p>
+                        Des appications web prêt à etre deployer sur n'importe
+                        appareil pour vous servir HKservices
+                    </p>
                 </div>
-                <a href="#" class="btn">Je me lance!</a>
+                <a href="#" class="btn" id="bt_hover">Nous Contacté</a>
             </div>
 
             <div class="box_cellule">
                 <div class="ttle">
-                    <h3>Conception de L'interface Utilisateur</h3>
+                    <h3>Un Site Vitrine</h3>
                 </div>
                 <div class="motivation">
-                    <p>n'hesite pas !!</p>
+                    <p>Le plus dynamique possibile avec tous vos contraintes</p>
                 </div>
-                <a href="#" class="btn">Je me lance!</a>
+                <a href="#" class="btn" id="bt_hover">Commander</a>
             </div>
 
             <div class="box_cellule">
                 <div class="ttle">
-                    <h3>Développement</h3>
+                    <h3>Autre</h3>
                 </div>
                 <div class="motivation">
-                    <p>n'hesite pas !!</p>
+                    <p>Expliquez nous votre idée</p>
                 </div>
-                <a href="#" class="btn">Je me lance!</a>
+                <a href="#" class="btn" id="bt_hover">Soumettre</a>
             </div>
         </div>
-    </section>
-    <!--section footer start-->
-    <footer>
-        <div class="logo">
-            <h3>Notre Emblème</h3>
-            <div class="Header">
-                <img src="../img/kone.png" alt="">
-                <a href="#">Hadou Services</a>
+        <!---------------------------------------------------------------->
+        </section">
+        <!-- formulaire de contact start-->
+        <section class="formul" id="formul">
+            <div class="deco">
+                <h3>formulaire de contact</h3>
+                <span id="fleche"> &xmap;</span>
             </div>
-        </div>
-        <div class="lien">
-            <h3>Lien vers le Haut</h3>
-            <nav class="navBar">
-                <a id="acceuil" href="#">Accuiel</a>
-                <a href="#" id="service">Services</a>
-                <a href="#" id="contacts_h">Contacts</a>
-            </nav>
-        </div>
-        <div class="search">
-            <h3>Que Chercher Vous ?</h3>
-            <form action="#" class="search-inp">
-                <input type="search" placeholder="Search..." autocomplete="off">
-                <label for="search input" class="fa fa-search"></label>
+            <form action="#" id="formulaire">
+                <div class="input_formul">
+                    <input type="number" placeholder="Votre Contact ..">
+                    <input type="email" placeholder="Votre email ...">
+                </div>
+                <div class="input_formul">
+                    <input type="number" placeholder="Votre Contact ..">
+                    <input type="email" placeholder="Votre email ...">
+                </div>
+                <div class="input_formul">
+                    <input type="number" placeholder="Votre Contact ..">
+                    <input type="email" placeholder="Votre email ...">
+                </div>
+                <div class="input_formul">
+                    <input type="number" placeholder="Votre Contact ..">
+                    <input type="email" placeholder="Votre email ...">
+                </div>
+                <div class="input_formul">
+                    <a href="#" class="btn">Enregistrer</a>
+                </div>
             </form>
-        </div>
-        <div class="footer_comm">
-            <h3>Formulaire de Commentaire</h3>
-            <form action="#" class="form-footer">
-                <label for="Email">Vortre Email</label>
-                <input type="Eemail" placeholder="" autocomplete="off">
-                <a href="#" class="btn">Envoyer</a>
-            </form>
-        </div>
-    </footer>
-    <!--section footer end-->
-    <script src="../script/code.js"></script>
-    <script src="../script/script_web.js"></script>
+        </section>
+        <!-- formulaire de contact start-->
+        <!--section footer start-->
+        <footer>
+            <div class="logo">
+                <h3>Notre Emblème</h3>
+                <div class="Header">
+                    <img src="../img/kone.png" alt="">
+                    <a href="#">Hadou Services</a>
+                </div>
+            </div>
+            <div class="lien">
+                <h3>Lien vers le Haut</h3>
+                <nav class="navBar">
+                    <a id="acceuil" href="#">Accuiel</a>
+                    <a href="#" id="service">Services</a>
+                    <a href="#" id="contacts_h">Contacts</a>
+                </nav>
+            </div>
+            <div class="search">
+                <h3>Que Chercher Vous ?</h3>
+                <form action="#" class="search-inp">
+                    <input type="search" placeholder="Search..." autocomplete="off">
+                    <label for="search input" class="fa fa-search"></label>
+                </form>
+            </div>
+            <div class="footer_comm">
+                <h3>Formulaire de Commentaire</h3>
+                <form action="#" class="form-footer">
+                    <label for="Email">Vortre Email</label>
+                    <input type="Eemail" placeholder="" autocomplete="off">
+                    <a href="#" class="btn">Envoyer</a>
+                </form>
+            </div>
+        </footer>
+        <!--section footer end-->
+        <script src="../script/code.js"></script>
+        <script src="../script/script_web.js"></script>
 </body>
 
 </html>

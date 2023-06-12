@@ -92,6 +92,7 @@ header .header-2 .navBar a:hover {
 }
 
 #menu {
+    background-color: white;
     padding: 2rem 5%;
     font-size: 3rem;
     border: .1rem solid rgba(0, 0, 0, .1);
@@ -102,7 +103,7 @@ header .header-2 .navBar a:hover {
 }
 
 #menu:hover {
-    background-color: var(--orange);
+    background-color: var(--black);
     color: white;
 }
 
@@ -281,7 +282,6 @@ section {
 /* contact section start*/
 .contact {
     display: block;
-
 }
 
 .contact form {
@@ -529,7 +529,7 @@ footer .footer_comm .form-footer .btn:focus {
     }
 
     header .header-2 .navBar {
-        background-color: var(--orange);
+        background-color: var(--black);
         position: absolute;
         top: 100%;
         right: 0;
