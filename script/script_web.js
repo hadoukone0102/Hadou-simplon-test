@@ -25,21 +25,26 @@
         formulaire.classList.remove('active');
     })
 
-    window.addEventListener('scroll', () => {
-        formulaire.classList.remove('active');
-    })
-
 
     const contient_tous = document.querySelector('.contient_tous');
     const bt_hover = document.querySelectorAll('#bt_hover');
     const croix_rouge = document.querySelector('#croix_rouge');
+    const affichage_of_elements = document.querySelector('#affichage_of_elements')
     for (let i = 0; i < bt_hover.length; i++) {
         bt_hover[i].addEventListener('click', () => {
-            contient_tous.classList.add('active')
+
+            let parent_de_this = bt_hover[i].parentNode.firstElementChild;
+            let h3_of_this = parent_de_this.querySelector('#essaie').innerHTML;
+            affichage_of_elements.innerHTML = h3_of_this;
+            contient_tous.classList.add('active');
         })
     }
     croix_rouge.addEventListener('click', () => {
         contient_tous.classList.remove('active')
+    })
+
+    window.addEventListener('scroll', () => {
+        formulaire.classList.remove('active');
     })
 
 })();
