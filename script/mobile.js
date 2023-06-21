@@ -21,8 +21,8 @@
 
     function Remouve() {
         navbar_mob.classList.remove('active');
-        menu_bar_mob.classList.remove('fa-times');
-        header_3.classList.remove('active');
+        //menu_bar_mob.classList.remove('fa-times');
+        //header_3.classList.remove('active');
     }
 
     function grild(grid) {
