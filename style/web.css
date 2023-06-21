@@ -291,6 +291,9 @@ body {
     display: block;
 }
 
+.cellule.active {
+    display: none;
+}
 
 /* responsive */
 
@@ -320,6 +323,10 @@ body {
 }
 
 @media(max-width:768px) {
+    #ma-grille .cellule {
+        display: block;
+    }
+
     .contient_tous .web_perso .input_web {
         display: block;
 
