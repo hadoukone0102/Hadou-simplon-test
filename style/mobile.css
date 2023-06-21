@@ -250,6 +250,22 @@ section {
     padding: 2rem;
 }
 
+.btn {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2rem;
+    background-color: white;
+    display: block;
+    color: var(--black);
+    border-radius: .5rem;
+}
+
+.btn:hover {
+    background-color: var(--black);
+    color: white;
+}
+
 /* for all */
 .content_h_mob {
     display: grid;
@@ -371,6 +387,50 @@ section {
     opacity: 1;
 }
 
+/* section second */
+.actualite {
+    display: block;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.actualite .title_actu {
+    display: block;
+    padding: auto;
+}
+
+.actualite .title_actu h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+    padding: 2rem;
+}
+
+.actualite .branche {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.actualite .branche .branche_1,
+.branche_2,
+.branche_3 {
+    display: block;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.actualite .branche .branche_1 h3,
+.branche_2 h3,
+.branche_3 h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--black);
+    text-align: center;
+    padding: 1rem;
+}
+
+
 
 
 /* le responsive */
@@ -426,6 +486,17 @@ section {
 
     #non_non {
         display: none;
+    }
+
+    /* section 2 */
+    .actualite .branche {
+        display: block;
+    }
+
+    .actualite .branche .branche_1,
+    .branche_2,
+    .branche_3 {
+        margin: 1rem;
     }
 }
 
