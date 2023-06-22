@@ -88,6 +88,7 @@
     window.addEventListener('scroll', Remouve);
     window.addEventListener('scroll', function () {
         grild('.box_mob');
+        grild('.coll_box')
     });
 
 
