@@ -407,9 +407,10 @@ section {
 }
 
 .actualite .branche {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 10px;
 }
 
 .actualite .branche .branche_1,
@@ -430,6 +431,31 @@ section {
     padding: 1rem;
 }
 
+.actualite .branche .branche_1 p,
+.branche_2 p,
+.branche_3 p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #121417;
+    padding: .5rem;
+}
+
+.links_reseaux {
+    display: flex;
+}
+
+.links_reseaux i {
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    margin: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.links_reseaux i:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .12), 1px 1px 3px rgba(0, 0, 0, .23);
+}
 
 
 
