@@ -523,7 +523,19 @@ section {
 
 
 
+.copyright {
+    width: 100%;
+    padding: 20px 100px 30px;
+    background-color: var(--black);
+    border: solid 1px rgba(250, 250, 250, 0.297);
+    margin-bottom: .5rem;
+}
 
+.copyright p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
 
 
 /* le responsive */
