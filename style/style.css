@@ -507,9 +507,10 @@ footer .footer_comm .form-footer .btn:focus {
 .container_back1 .backg1 .desing {
     background-color: var(--black);
     padding: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+    gap: 1px;
     padding: 2rem 5%;
     z-index: 20;
 }
@@ -665,8 +666,12 @@ footer .footer_comm .form-footer .btn:focus {
         display: initial;
     }
 
-    .main .desing {
+    .container_back1 .backg1 .desing {
         display: block;
+    }
+
+    .container_back1 {
+        height: auto;
     }
 
     .contact {
@@ -675,6 +680,10 @@ footer .footer_comm .form-footer .btn:focus {
 
     .contact form .inputBox input {
         width: 100%;
+    }
+
+    .images-derou {
+        display: none;
     }
 }
 
