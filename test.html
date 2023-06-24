@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            /* Ajustez la hauteur selon vos besoins */
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+    </style>
+
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="img/1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="img/2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="img/3.jpg" alt="Image 3">
+        </div>
+        <!-- Ajoutez d'autres slides selon vos besoins -->
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            slides[index].classList.add('active');
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            let nextIndex = currentSlide + 1;
+            if (nextIndex >= slides.length) {
+                nextIndex = 0;
+            }
+            showSlide(nextIndex);
+        }
+
+        setInterval(nextSlide, 2000); // Changez l'intervalle selon vos préférences
+
+    </script>
+
+</body>
+
+</html>
