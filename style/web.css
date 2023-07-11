@@ -1,0 +1,364 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.7rem;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+.contient_tous {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 1000;
+    visibility: hidden;
+}
+
+.contient_tous.active {
+    visibility: visible;
+}
+
+.contient_tous .web_perso {
+    text-align: center;
+    display: block;
+    margin: 10% 10% auto 15%;
+    background-color: white;
+    padding: 2rem;
+}
+
+.contient_tous .web_perso .detail_web {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.contient_tous .web_perso .detail_web h3 {
+    font-size: 2rem;
+    color: #2c2c54;
+    font-weight: bold;
+}
+
+.contient_tous .web_perso .detail_web span {
+    font-size: 2rem;
+    padding: 1.5rem 5%;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.contient_tous .web_perso .detail_web span:hover {
+    background-color: rgb(239, 44, 44);
+    color: white;
+}
+
+.contient_tous .web_perso .input_web {
+    text-align: center;
+    display: flex;
+    padding: 2rem;
+}
+
+.contient_tous .web_perso .input_web textarea {
+    padding: .5rem;
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.contient_tous .web_perso .input_web input {
+    border: .1rem solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    margin-left: 1rem;
+    height: 5rem;
+}
+
+.header_main header {
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_main header .header-2 .navBar a:hover {
+    color: #2c2c54;
+}
+
+.header_main {
+    display: block;
+}
+
+.header_main .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header_main .head .img_head {
+    width: 100%;
+    height: auto;
+}
+
+.header_main .head .img_head img {
+    width: 100%;
+    height: 100%;
+}
+
+.header_main .head .structure {
+    display: block;
+    padding: 1rem;
+}
+
+.header_main .head .structure h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header_main .head .structure .processus {
+    display: flex;
+    width: 100%;
+}
+
+.header_main .head .structure .processus .elmnt_nav {
+    padding: 2rem;
+    display: block;
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.header_main .head .structure .processus .elmnt_nav .links.active {
+    background-color: #f0a10e;
+    color: white;
+}
+
+.header_main .head .structure .processus .elmnt_nav a {
+    display: block;
+    padding: 1.5rem;
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    margin: .5rem;
+    color: #2c2c54;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header_main .head .structure .processus .element_content {
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    width: 100%;
+}
+
+.header_main .head .structure .processus .element_content .contenue {
+    display: none;
+}
+
+.header_main .head .structure .processus .element_content .contenue.active {
+    display: initial;
+    font-size: 1.5rem;
+    color: #2c2c54;
+}
+
+/*  autre */
+
+.cellule_gril {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 2rem;
+}
+
+.cellule_gril .box_cellule {
+    display: block;
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 1rem;
+}
+
+.cellule_gril .box_cellule .ttle {
+    display: block;
+    padding: 1rem;
+}
+
+.cellule_gril .box_cellule .ttle h3 {
+    font-size: 2rem;
+    color: #2c2c54;
+    border-bottom: 1rem solid rgba(0, 0, 0, .3);
+}
+
+.cellule_gril .box_cellule .motivation {
+    padding: 1rem;
+}
+
+.cellule_gril .box_cellule .motivation p {
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.cellule_gril .box_cellule .btn {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 5rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.cellule_gril .box_cellule .btn:hover {
+    background-color: #f0a10e;
+    color: white;
+}
+
+.header_main header #menu {
+    background-color: white;
+    padding: 2rem 5%;
+    font-size: 3rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    color: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.header_main header #menu:focus {
+    color: var(--orange);
+}
+
+/* formulaire de contact */
+
+.formul {
+    position: absolute;
+    display: block;
+    background-color: white;
+    top: 10%;
+    right: -100%;
+    width: 25%;
+    height: 30%, auto;
+    padding: 2rem;
+    border-radius: .1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.formul.active {
+    right: 0%;
+    transition: .3s ease-in;
+}
+
+.formul .deco {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2%;
+}
+
+.formul .deco h3 {
+    font-size: 1.5rem;
+    color: #2c2c54;
+}
+
+.formul .deco span {
+    font-size: 2rem;
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.formul #formulaire {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.formul #formulaire .input_formul {
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.formul #formulaire .input_formul input {
+    display: block;
+    padding: 1rem 0;
+    margin: 1rem;
+    width: 100%;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    height: 5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.23);
+}
+
+.formul #formulaire .input_formul .btn {
+    display: block;
+}
+
+.cellule.active {
+    display: none;
+}
+
+/* responsive */
+
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:900px) {
+    .formul {
+        display: none;
+    }
+
+    .header_main .head {
+        display: block;
+    }
+
+    .header_main .head .img_head {
+        width: auto;
+    }
+
+    .header_main .head .img_head #img2 {
+        width: 50%;
+        height: 60%;
+    }
+}
+
+@media(max-width:768px) {
+    #ma-grille .cellule {
+        display: block;
+    }
+
+    .contient_tous .web_perso .input_web {
+        display: block;
+
+    }
+
+    .contient_tous .web_perso .input_web input {
+        margin-top: 1rem;
+    }
+
+    .header_main header #menu {
+        display: block;
+    }
+
+    .header_main .head .structure {
+        width: auto;
+    }
+
+    .header_main .head .structure .processus {
+        display: block;
+    }
+
+    .cellule_gril {
+        display: block;
+    }
+
+    .cellule_gril .box_cellule {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
