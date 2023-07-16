@@ -83,6 +83,9 @@ header .header-2 .navBar a {
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
     margin-left: 1rem;
 }
+#contacts_h{
+    display: none;
+}
 
 header .header-2 .navBar a:hover {
     background-color: var(--orange);
@@ -633,6 +636,9 @@ footer .footer_comm .form-footer .btn:focus {
 @media(max-width:768px) {
 
     #menu {
+        display: block;
+    }
+    #contacts_h{
         display: block;
     }
 

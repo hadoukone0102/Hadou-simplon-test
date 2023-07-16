@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,700;1,200;1,300;1,400;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+
+:root {
+    --black: #2c2c54;
+    --orange: #f6ab20;
+    --shadow:1px 1px 3px rgba(0,0,0,.12),1px 1px 3px rgba(0,0,0,.12);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+*::selection {
+    background-color: var(--black);
+    color: var(--orange);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    overflow-x: hidden;
+}
+.anim_conn{
+    background-color: white;
+}
+
+
+.container_back1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-direction: row;
+    background: var(--black);
+    width: 100%;
+    min-height: 60vh;
+    padding: 2rem 2rem;
+    height: 20%;
+}
+
+.container_back1 .backg1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: auto;
+}
+
+.container_back1 .backg1 .lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--black);
+}
+
+.lines1 {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.lines2 {
+    z-index: 10;
+    opacity: 0.5;
+}
+
+.lines3 {
+    z-index: 5;
+    opacity: 0.5;
+}
+
+.waves {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+    background-color: var(--black);
+}
+
+.waves1 {
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+    background-color: var(--black);
+}
+
+.waves2 {
+    -webkit-background-size: 50% 100px;
+    background-size: 50% 100px;
+    background-color: var(--black);
+    animation: hkservicesAnimations 12s linear infinite;
+}
+
+.waves3 {
+    -webkit-background-size: 50% 80px;
+    background-size: 50% 80px;
+    animation: hkservicesAnimations 18s linear infinite;
+}
+
+@keyframes hkservicesAnimations {
+    0% {
+        transform: translateX(0) translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateX(-25%) translateY(0) scale(0.5);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0) scale(1)
+    }
+}
+
+/* le base du programme */
+
+ .container_back1 .pricipal{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+ .container_back1 .pricipal .pp{
+    position: absolute;
+   background-color: rgb(220, 9, 9);
+   padding: 2rem 9%;
+   bottom: 0;
+   z-index: 2000;
+   height: 50%;
+
+}
+
+/* autre */
+
+body{
+    position: relative;
+}
+.autre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.autre .pricipal{
+    position: absolute;
+    background-color:white;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    padding: 2rem 9%;
+    z-index: 3000;
+    height: auto;
+}
+
+.autre .pricipal .contenti_form{
+    display: block;
+}
+.autre .pricipal .contenti_form .connex{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.autre .pricipal .contenti_form .connex h3{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.autre .pricipal .contenti_form .connex .form_content_first,.connex .form_content_first .input_form_first{
+    display: block;
+}
+.autre .pricipal .contenti_form .connex .form_content_first .input_form_first label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--black);
+    margin: .5rem;
+}
+.autre .pricipal .contenti_form .connex .form_content_first .input_form_first input{
+    border: var(--border);
+    width: 100%;
+    height: 4rem;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+}
+.autre .pricipal .contenti_form .connex .form_content_first_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    margin: 1.5rem;
+    background-color: var(--black);
+    text-align: center;
+    padding: 2rem 10%;
+    border-radius: 1rem;
+    color: white;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
