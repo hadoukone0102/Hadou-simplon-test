@@ -1,3 +1,6 @@
+<?php
+require("Operation.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,16 +34,24 @@
 
         <div class="contenti_form">
            
-            <form action="#" class="connex">
+            <form action="#" class="connex" method="POST">
                 <h3>Ma Page de Connexion</h3>
+                <pre>
+                    <?php 
+                    // var_dump($_SESSION['Connecter'] );
+                    if(isset( $requetes )){echo  $requetes ;} 
+                    if(isset($impossible)){ echo "<h3 style='color:red;font-size:1.5rem;'>". $impossible."</h3>";}
+                    
+                    ?>
+                </pre>
                 <div class="form_content_first">
                     <div class="input_form_first">
                         <label for="inputEmail">Votre E-mail</label>
-                        <input type="email" name="email" autocomplete="off" required>
+                        <input type="email" name="email_conn" autocomplete="off">
                     </div>
                     <div class="input_form_first">
                         <label for="inputEmail">Votre Mote de passe</label>
-                        <input type="password" name="email" autocomplete="off" required>
+                        <input type="password" name="mdp_conn" autocomplete="off">
                     </div>
                 </div>
 

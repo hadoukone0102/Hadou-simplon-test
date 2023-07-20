@@ -83,6 +83,24 @@ header .header-2 .navBar a {
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .23);
     margin-left: 1rem;
 }
+header .header-2 .navBar ul{
+    list-style-type: none;
+}
+
+header .header-2 .navBar ul li{
+
+    display: block;
+        padding: 2rem 9%;
+        font-size: 2rem;
+        color: var(--black);
+        margin-left: 1rem;
+        width: 100%;
+        margin-bottom: .5rem;
+        background-color: white;
+        text-align: center;
+        list-style-type: disclosure-closed;
+        cursor: pointer;
+}
 #contacts_h{
     display: none;
 }
@@ -92,6 +110,14 @@ header .header-2 .navBar a:hover {
     border-radius: .5rem;
     color: white;
 
+}
+#param li{
+    padding: 2rem 9%;
+    font-size: 2rem;
+    color: var(--black);
+    list-style-type: disclosure-closed;
+    margin-left: 1rem;
+    display: none;
 }
 
 #menu {
@@ -638,6 +664,9 @@ footer .footer_comm .form-footer .btn:focus {
     #menu {
         display: block;
     }
+    header .header-2 .navBar ul li{
+        display: block;
+    }
     #contacts_h{
         display: block;
     }
@@ -690,6 +719,12 @@ footer .footer_comm .form-footer .btn:focus {
 
     .images-derou {
         display: none;
+    }
+    header .header-2 .navBar ul li{
+        display: none;
+    }
+    #param li{
+        display: block;
     }
 }
 

@@ -1,9 +1,5 @@
 <?php
 require("Operation.php");
-// var_dump();
-if(isset( $err)){
-    echo  $err;
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,42 +37,71 @@ if(isset( $err)){
            
             <form action="#" class="connex" method="POST">
                 <h3>Ma Page d'inscription</h3>
-                <?php if(isset($result)){echo $result;}?>
+                <pre>
+                <?php 
+                    // var_dump( $_SESSION['user']['nom']);
+                    if(isset($res)){echo "<h3 style='color:red;'>".$res."</h3>";}
+                    if(isset($resss)){echo $resss;}
+                    if(isset($err)){echo $err;}
+                ?>
+                </pre>
+               
                 <div class="form_content_first">
                     <div class="input_form_first">
                         <label for="inputEmail">Votre Nom :</label>
-                        <input type="text" name="nom" autocomplete="off" required>
+                        <input type="text" name="nom" autocomplete="off">
                     </div>
                     <div class="input_form_first">
                         <label for="inputEmail">Votre Prenom :</label>
-                        <input type="Text" name="prenom" autocomplete="off" required>
+                        <input type="Text" name="prenom" autocomplete="off">
                     </div>
                 </div>
                 <div class="form_content_first">
                     <div class="input_form_first">
                         <label for="inputEmail">Votre Profession :</label>
-                        <input type="text" name="work" autocomplete="off" required>
+                        <input type="text" name="work" autocomplete="off">
                     </div>
                     <div class="input_form_first">
                         <label for="inputEmail">Votre Contact :</label>
-                        <input type="number" name="domaine" autocomplete="off" required>
+                        <input type="number" name="domaine" autocomplete="off">
                     </div>
                 </div>
                 <div class="form_content_first">
                     <div class="input_form_first">
                         <label for="inputEmail">Votre E-mail :</label>
-                        <input type="email" name="email" autocomplete="off" required>
+                        <input type="email" name="email" autocomplete="off">
                     </div>
                     <div class="input_form_first">
                         <label for="inputEmail">Votre Mote de passe :</label>
-                        <input type="password" name="email" autocomplete="off" required>
+                        <input type="password" name="mdp" autocomplete="off">
                     </div>
                 </div>
 
                 <div class="form_content_first">
                     <input type="submit" value="Enregistrer" class="btn" name="inscription">
-                    <a href="Connexion.php" class="btn">Mon Compte</a>
+                    <a href="Connexion.php" class="btn"> Mon Compte</a>
                 </div>
+                <style>
+                    
+@media(max-width:500px){
+    .autre .pricipal .contenti_form .connex .form_content_first{
+        display: block;
+    }
+    .btn{
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    }
+    
+}
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
+                </style>
 
             </form>
         
